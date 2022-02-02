@@ -1,0 +1,50 @@
+@import './../../../../App.scss';
+
+.layout-auth{
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: auto;
+    align-items: center;
+    padding: 0 50px;
+
+    @media (min-width: 1040px){
+        display: flex;
+        padding: 0;
+    }
+}
+
+.logo-container{
+    display: grid;
+    place-items: center;
+    padding: 124px 0;
+
+    @media (min-width: 1040px){
+        width: 50%;
+    }
+}
+
+.logo{
+    width: 270px;
+    height: 165px;
+
+    @media (min-width: 1040px){
+        width: 470px;
+        height: 290px;
+    }
+}
+.login-register-container{
+
+    @media (min-width: 1040px){
+        width: 50%;
+    }
+}
+
+.text-credit{
+    text-align: center;
+    color: $text-purple;
+    font-size: rem(14);
+
+    @media (min-width: 1040px){
+        font-size: rem(18);
+      }
+}

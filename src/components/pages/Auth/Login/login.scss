@@ -1,0 +1,54 @@
+@import './../../../../App.scss';
+
+.login-container{
+  margin: auto;
+  width: rem(310);
+
+    @media (min-width: 1040px){
+        width: rem(430);
+    } 
+}
+
+p{
+    font-size: rem(18);
+
+    @media (min-width: 1040px){
+      font-size: rem(24);
+    }
+}
+
+.text{
+    padding: rem(40) 0;
+}
+
+.btn-sign{
+    position: relative;
+    display: block;
+    margin: 0 auto rem(40);
+    width: rem(310);
+    height: rem(60);
+    padding-left: rem(60);
+    background-color: $bg-blue;
+    font-family: 'Roboto', sans-serif;
+    font-size: rem(18);
+    border-radius: rem(3);
+    overflow: hidden;
+
+    @media (min-width: 1040px){
+      width: rem(430);
+      font-size: rem(24);
+    }
+    
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: rem(60);
+    background-color: $white;
+    background-image: url('./../../../../assets/images/google-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

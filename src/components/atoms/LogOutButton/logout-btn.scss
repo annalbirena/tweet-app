@@ -1,0 +1,11 @@
+@import './../.././../App.scss';
+
+.btn-logout{
+    width: rem(115);
+    height: rem(35);
+    padding: 0 rem(5);
+    font-size: rem(11);
+    letter-spacing: rem(2);
+    background-color: $pink;
+    color: $purple-3;
+}

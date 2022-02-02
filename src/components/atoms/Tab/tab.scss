@@ -1,0 +1,42 @@
+@import './../../../App.scss';
+
+.tab-container {
+    max-width: rem(600);
+    height: rem(35);
+
+    @media (min-width: 1040px){
+        height: rem(46);
+      }
+
+    ul,
+    li,
+    a {
+        height: 100%;
+    }
+
+    li {
+        width: 100%;
+        display: flex;
+    }
+
+    button {
+        height: 100%;
+        width: 100%;
+        font-size: rem(15);
+        letter-spacing: rem(2);
+        color: $text-purple;
+    }
+}
+
+.link {
+    width: 50%;
+    background-color: $bg-purple;
+}
+
+.active {
+    background-color: $text-purple;
+    
+    button {
+        color: $bg-purple;
+    }
+}

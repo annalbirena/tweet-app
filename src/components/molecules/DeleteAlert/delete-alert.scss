@@ -1,0 +1,51 @@
+@import './../../../App.scss';
+
+.delete-alert-layout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: $bg-layout-alert;
+}
+
+.delete-alert {
+    display: flex;
+    flex-direction: column;
+    width: rem(300);
+    padding: rem(25);
+    background-color: $bg-c;
+    border-radius: rem(15);
+
+    h1 {
+        font-size: rem(20);
+        font-weight: 500;
+        margin-bottom: rem(8);
+    }
+
+    p {
+        font-size: rem(15);
+        color: $alert-text;
+    }
+
+    .buttons {
+        margin-top: rem(24);
+
+        button {
+            width: rem(250);
+            height: rem(42);
+            display: block;
+            border-radius: rem(20);
+            font-size: rem(15);
+        }
+
+        .cancel-btn {
+            margin-top: rem(12);
+            border: 1px $alert-text solid;
+        }
+    }
+}
+

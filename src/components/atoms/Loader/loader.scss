@@ -1,0 +1,11 @@
+.loader-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: var(--c-bg-gifts);
+}
+.loader-img{
+    height: 70px;
+    width: 70px;
+}

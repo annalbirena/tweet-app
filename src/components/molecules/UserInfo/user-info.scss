@@ -1,0 +1,38 @@
+@import './../../../App.scss';
+.user-container {
+    padding-top: rem(52);
+    background-color: $bg-purple;
+    border-bottom: 2px $text-purple solid;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    padding: rem(23);
+
+    img {
+        width: rem(105);
+        height: rem(105);
+        margin-bottom: rem(20);
+        border-radius: 50%;
+
+        @media (min-width: 1040px){
+            width: rem(134);
+            height: rem(134);
+          }
+    }
+
+    span {
+        padding: rem(5);
+        border-radius: 0 0 0 rem(5);
+        font-size: rem(18);
+        letter-spacing: rem(3);
+        color: $bg-purple;
+        text-transform: uppercase;
+
+        @media (min-width: 1040px){
+            padding: rem(8);
+            font-size: rem(22);
+          }
+    }
+}

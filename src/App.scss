@@ -1,0 +1,156 @@
+@use "sass:math";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Fruktur&family=Inter:wght@400;700&family=Irish+Grover&family=Press+Start+2P&family=Roboto:wght@500&display=swap');
+//Functions
+// Source: https://css-tricks.com/snippets/sass/px-to-em-functions/
+@function rem($pixels, $context: 16) {
+	@return (math.div($pixels, $context)) * 1rem;
+}
+
+//Variables
+$bg-c: #2E132C;
+$white: #FFFFFF;
+$bg-blue: #4285F4;
+$text-purple: #60265B;
+$bg-purple: #150714;
+$pink: #F50D5A;
+$orange: #FF865C;
+$yellow: #FFEA5C;
+$green: #00DA76;
+$blue: #0096CE;
+$purple: #800FFF;
+$purple-1: #914D8B;
+$purple-3: #250C23;
+$bg-text-area: #2F112D;
+$bg-layout-alert: rgba(91, 112, 131, 0.4);
+$alert-text: rgb(136, 153, 166);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Fira Code', monospace;
+  }
+
+html{
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+}
+
+button {
+  box-sizing: border-box;
+  color: $white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input,
+button,
+textarea{
+  border: none;
+  outline: none;
+}
+
+h1,
+h2 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: rem(22);
+  line-height: rem(35);
+  letter-spacing: rem(5);
+
+  @media (min-width: 1040px){
+    font-size: rem(30);
+    line-height: rem(50);
+  }
+}
+
+.font-press-2p {
+  font-family: 'Press Start 2P', cursive;
+  font-weight: bold;
+}
+
+.App{
+    position: relative;
+    min-height: 100vh;
+    background-color: $bg-c;
+    color: $white;
+}
+
+.inline-block{
+  display: inline-block
+  ;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.flex-between-center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mg-auto{
+  margin: auto;
+}
+
+.text-pink{
+  color: $pink;
+}
+
+//Bordes
+
+.border-yellow{
+  border: rem(3) $yellow solid;
+}
+
+.border-orange{
+  border: rem(3) $orange solid;
+}
+
+.border-pink{
+  border: rem(3) $pink solid;
+}
+
+.border-green{
+  border: rem(3) $green solid;
+}
+
+.border-blue{
+  border: rem(3) $blue solid;
+}
+
+.border-purple{
+  border: rem(3) $purple solid;
+}
+
+//Background color
+
+.bg-yellow{
+  background-color: $yellow;
+}
+
+.bg-orange{
+  background-color: $orange;
+}
+
+.bg-pink{
+  background-color: $pink;
+}
+
+.bg-green{
+  background-color: $green;
+}
+
+.bg-blue{
+  background-color: $blue;
+}
+
+.bg-purple{
+  background-color: $purple;
+}

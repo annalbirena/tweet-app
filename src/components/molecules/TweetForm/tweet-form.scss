@@ -1,0 +1,88 @@
+@import './../../../App.scss';
+
+.main-form{
+    padding-top: rem(52);
+    background-color: $bg-purple;
+    border-bottom: 2px $text-purple solid;
+
+    .form{
+        display: flex;
+        padding: rem(20) rem(15);
+        max-width: rem(600);
+    }
+}
+
+.img-user{
+    width: rem(48);
+    height: rem(48);
+    margin-right: rem(10);
+    border-radius: 50%;
+
+    @media (min-width: 1040px){
+        width: rem(56);
+        height: rem(56);
+        margin-right: rem(15);
+      }
+}
+
+.form-container {
+    width: 100%;
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            font-size: rem(14);
+
+            @media (min-width: 1040px){
+                font-size: rem(16);
+              }
+
+        }
+    }
+
+    button {
+        align-self: flex-end;
+        right: 0;
+        width: rem(100);
+        height: rem(35);
+        font-size: rem(12);
+        letter-spacing: rem(5);
+        color: $bg-purple;
+        background-color: $bg-text-area;
+
+        &:hover {
+            background-color: $text-purple;
+        }
+    }
+}
+
+.form-counter{
+    padding: rem(5) 0;
+}
+
+.form-text-area {
+    width: 100%;
+    padding: rem(7);
+    background-color: $bg-text-area;
+    font-size: rem(16);
+    color: $purple-1;
+
+    @media (min-width: 1040px){
+        font-size: rem(20);
+      }
+
+    &::placeholder{
+        color: $purple-1;
+    }
+}
+
+.danger-text {
+    color: $pink;
+}
+
+.danger-shadow {
+    color:yellow;
+}
+

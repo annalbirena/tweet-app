@@ -1,0 +1,121 @@
+@import './../../../../App.scss';
+
+.register-container{
+    margin: auto;
+    width: rem(310);
+
+    @media (min-width: 1040px){
+        width: rem(430);
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+    }   
+}
+
+h2 {
+    padding: rem(20) 0;
+    span {
+        text-transform: uppercase;
+        font-family: 'Press Start 2P', cursive;
+        font-size: rem(22);
+        line-height: rem(35);
+        letter-spacing: rem(5);
+
+        @media (min-width: 1040px){
+            font-size: rem(30);
+            line-height: rem(50);
+        }
+    }
+}
+
+.block{
+    display: block;
+}
+
+.input-username{
+    width: rem(310);
+    height: rem(52);
+    margin-bottom: rem(30);
+    padding-left: rem(15);
+    background-color: $bg-purple;
+    font-size: rem(18);
+    color: $white;
+    caret-color: $white;
+
+    &::placeholder{
+        color: $purple-1;
+    }
+
+    @media (min-width: 1040px){
+        width: rem(430);
+        height: rem(65);
+        font-size: rem(24);
+    }
+}
+
+.form-text {
+    @media (min-width: 1040px){
+        font-size: rem(24);
+      }
+}
+.radio-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(27);
+
+    input{
+        appearance: none;
+        height: rem(42);
+        width: rem(42);
+        cursor: pointer;
+
+        @media (min-width: 1040px){
+            height: rem(58);
+            width: rem(58);
+          }
+
+        &:hover,
+        &:checked{
+            outline: rem(5) solid $white;
+        }
+    }
+}
+
+.btn-register{
+    width: rem(310);
+    height: rem(50);
+    margin: rem(35) 0;
+    background-color: $green;
+    font-size: rem(12);
+    font-weight: bold;
+    letter-spacing: rem(3);
+    font-family: 'Press Start 2P', cursive;
+
+    @media (min-width: 1040px){
+        width: rem(430);
+        height: rem(65);
+        margin: rem(52) 0 rem(85) 0;
+        font-size: rem(18);
+    }
+}
+
+.pink{
+    background-color: $pink;
+}
+.orange{
+    background-color: $orange;
+}
+.yellow{
+    background-color: $yellow;
+}
+.green{
+    background-color: $green;
+}
+.blue{
+    background-color: $blue;
+}
+.purple{
+    background-color: $purple;
+}

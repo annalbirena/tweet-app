@@ -1,0 +1,121 @@
+@import './../../../App.scss';
+
+.tweet-container {
+    display: flex;
+    padding: rem(20) rem(16);
+    border-bottom: 2px $text-purple solid;
+
+    @media (min-width: 1040px){
+        padding: rem(25) rem(16);
+      }
+}
+
+.tweet-user-img {
+    width: rem(48);
+    height: rem(48);
+    margin-right: rem(5);
+
+    @media (min-width: 1040px){
+        width: rem(56);
+        height: rem(56);
+        margin-right: rem(15);
+      }
+    
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+}
+
+.tweet-info {
+    flex: 2; //Ocupar el resto del div padre
+    display: flex;
+    flex-direction: column;
+}
+
+.tweet-header {
+    button {
+        height: rem(18);
+        width: rem(18);
+
+        @media (min-width: 1040px){
+            height: rem(24);
+            width: rem(20);
+          }
+    }
+
+    .date {
+        @media (min-width: 1040px){
+            font-size: rem(20);
+          }
+    }
+}
+
+.username {
+    color: $bg-c;
+    padding: rem(4);
+    border-radius: 0 0 0 rem(5);
+    font-size: rem(10);
+    font-weight: bold;
+    letter-spacing: rem(2);
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+
+    @media (min-width: 1040px){
+        font-size: rem(15);
+      }
+}
+
+.tweet-text {
+    padding: rem(10) 0 rem(20);
+
+    @media (min-width: 1040px){
+        padding: rem(15) 0 rem(25);
+      }
+
+    p {
+        font-size: rem(14);
+
+        @media (min-width: 1040px){
+            font-size: rem(18);
+          }
+    }
+}
+
+.tweet-like {
+    display: flex;
+    align-items: center;
+
+    button {
+        width: rem(18);
+        height: rem(15);
+
+        @media (min-width: 1040px){
+            width: rem(24);
+            height: rem(20);
+          }
+    }
+
+    span {
+        font-size: rem(12);
+        margin-left: rem(5);
+
+        @media (min-width: 1040px){
+            font-size: rem(16);
+            margin-left: rem(10);
+          }
+    }
+}
+
+.heart,
+.delete-svg {
+    @media (min-width: 1040px){
+        width: 100%;
+        height: 100%;
+      }
+}
+
+.f-color-pink {
+    color: $pink;
+}

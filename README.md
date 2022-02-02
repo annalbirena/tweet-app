@@ -15,8 +15,15 @@ Se utilizo React y Cloud Firestore de Firebase.
 
     Muestre un conteo favorito por tweet
 
-### Requerimientos adicionales
+## Requerimientos adicionales
 
     Mostrar mensaje de confirmacion antes de borrar un tweet
 
     Crear animaciones - loading para el manejo de peticiones
+
+## Vista del Login
+
+![image](https://user-images.githubusercontent.com/30696989/152194786-03f8b382-5ac2-444b-a3c8-4e42eb64d355.png)
+
+
+## Vista del Login

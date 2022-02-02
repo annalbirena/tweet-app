@@ -34,7 +34,3 @@ Link del proyecto: https://db-tweet-app.web.app/
 | ![image](https://user-images.githubusercontent.com/30696989/152196354-da1501a8-5610-45be-945f-20c6fffcd80e.png)  | ![image](https://user-images.githubusercontent.com/30696989/152196403-2baf0db5-557d-47ad-966d-656fb0ae74e3.png)  |
 
 
-
-
-
-## Vista del Login

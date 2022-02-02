@@ -7,7 +7,7 @@ Se utilizo React y Cloud Firestore de Firebase.
 
     Funcionalidad de hacer el login con una cuenta de google
 
-    Muestr el feed con los tweets publicados por las personas usuarias
+    Muestra el feed con los tweets publicados por las personas usuarias
 
     Crear o borrar mensajes publicados por la persona usuaria logueada
 
